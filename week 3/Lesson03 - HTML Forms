@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Week 3 HTML Forms</title>
+        <meta name="description" content="HTML Forms">
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <header>
+            <!-- this is an image container -->
+            <div>
+                <a href="index.html"><img src="./img/sample-logo.png" alt="header logo"></a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="index.html"></a></li>
+                </menu>
+            </nav>
+        </header>
+        <section>
+            <h1>HTML Forms</h1>
+        </section>
+        <section>
+            <h3>Form Row</h3>
+            <!-- method is case sensitive -->
+            <form action="./php/somefile.php" method="POST" enctype="multipart/form-data">
+                <div>
+                    <input type="text" name="fname" required placeholder="Your First Name">
+                    <input type="text" name="lname" required placeholder="Your Last Name">
+                    <p><input type="email" required placeholder="Your E-mail"></p>
+                    <label>Password:</label>
+                    <input type="password" required>
+                </div>
+
+            </form>
+        </section>
+        <footer>
+            <h6>This is where the company info goes</h6>
+        </footer>
+    </body>
+
+
+        
+</html>

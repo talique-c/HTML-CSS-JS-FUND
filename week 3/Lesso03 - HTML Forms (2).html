@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial scale=1">
+        <title>Week 3 HTML Forms</title>
+        <meta name="description" content="HTML Forms">
+        <meta name="robots" content="noindex, nofollow">
+    </head>
+    <body>
+        <header>
+            <!-- this is an image container -->
+            <div>
+                <a href="index.html"><img src="./img/sample-logo.png" alt="header logo"></a>
+            </div>
+            <nav>
+                <menu>
+                    <li><a href="index.html"></a></li>
+                </menu>
+            </nav>
+        </header>
+        <section>
+            <h1>HTML Forms</h1>
+        </section>
+        <section>
+            <h3>Form Row</h3>
+            <!-- method is case sensitive -->
+            <form action="./php/somefile.php" method="POST" enctype="multipart/form-data">
+                <div>
+                    <input type="text" name="fname" required placeholder="Your First Name">
+                    <input type="text" name="lname" required placeholder="Your Last Name">
+                    <p><input type="email" required placeholder="Your E-mail"></p>
+                    <label>Password:</label>
+                    <input type="password" required>
+                </div>
+                <div>
+                    <!-- need all of these attributes for a radio button -->
+                <input type="radio" id="HTML" name="lang" value="HTML">
+                    <label for="HTML">HTML</label>
+                <input type="radio" id="CSS" name="lang" value="CSS">
+                    <label for="CSS">CSS</label>
+                <br>
+                <input type="checkbox" id="choice1" name="v1" value="Bike">
+                    <label for="choice1">Bike</label>
+                <input type="checkbox" id="choice2" name="v2" value="Car">
+                    <label for="choice2">Car</label>
+                <br>
+                    <label for="bday">Your Birthday</label>
+                <input type="date" id="bday" name="birthday">
+                <br>
+                    <label for="files">Upload an Image:</label>
+                <input type="file" id="files" name="files">
+                <br>
+                <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><textarea></textarea>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <h6>This is where the company info goes</h6>
+        </footer>
+    </body>
+
+
+        
+</html>
