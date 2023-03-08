@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza Picker</title>
+    <meta name="description" content="A website for making pizzas.">
+    <meta name="author" content="Talique Capron">
+    <meta name="robots" content="noindex, nofollow">
+    <!--CSS linked-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Google Fonts linked-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Section: 1-->
+    <section>
+        <h1>Pizza Picker</h1>
+        <figure>
+            <img src="./img/pizza_pic2.jpg" alt="Pizza banner">
+        </figure>
+    </section>
+
+    <!--Form begin-->
+    <form action="assignment_2.html" method="post" enctype="multipart/form-data">
+        <!--Section 2: pizza number, size and toppings-->
+        <section>
+            <div>
+                <!--Amount subheading-->
+                <h2>Amount</h2>
+                <label for="pizzas">Please, enter a number of pizza(s): (Max. limit is 5)</label>
+                <!--Pizza amount dropdown box-->
+                <select name="pizzas" id="pizzas">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+        <!--Section 3: Pizza Sizes-->
+        <section>
+            <div>
+                <!--Sizes subheading-->
+                <h3>Sizes</h3>
+                <p>Please select a size:</p>
+                <!--Radio buttons for pizza size-->
+                <!--Same name to allow only 1 radio option to be chosen-->
+                <input type="radio" id="S" name="size" value="Small">
+                <label for="S">Small</label>
+                <input type="radio" id="M" name="size" value="Medium">
+                <label for="M">Medium</label>
+                <input type="radio" id="L" name="size" value="Large">
+                <label for="L">Large</label>
+                <input type="radio" id="XL" name="size" value="Extra Large">
+                <label for="XL">Extra Large</label>
+            </div>
+        </section>
+        <!--Section 4: Pizza toppings-->
+        <section>
+            <div>
+                <!--Toppings subheading-->
+                <h4>Toppings</h4>
+                <p>Please select a topping:</p>
+                <!--Checkboxes for pizza toppings-->
+                <p>Meats:</p>
+                <input type="checkbox" id="None" name="topping" value="None">
+                <label for="None">None</label>
+                <input type="checkbox" id="Pepperoni" name="topping1" value="Pepperoni">
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" id="Sausage" name="topping2" value="Sausage">
+                <label for="Sausage">Sausage</label>
+                <input type="checkbox" id="Chicken" name="topping3" value="Chicken">
+                <label for="Chicken">Chicken</label>
+                <input type="checkbox" id="Ham" name="topping4" value="Ham">
+                <label for="Ham">Ham</label>
+                <input type="checkbox" id="Bacon" name="topping5" value="Bacon">
+                <label for="Bacon">Bacon</label>
+                <!--Checkboxes fore more toppings-->
+                <p>Veggies & Fruits:</p>
+                <input type="checkbox" id="None2" name="topping6" value="None">
+                <label for="None2">None</label>
+                <input type="checkbox" id="Peppers" name="topping7" value="Peppers">
+                <label for="Peppers">Peppers</label>
+                <input type="checkbox" id="Mushrooms" name="topping8" value="Mushrooms">
+                <label for="Mushrooms">Mushrooms</label>
+                <input type="checkbox" id="Onions" name="topping9" value="Onions">
+                <label for="Onions">Onions</label>
+                <input type="checkbox" id="Tomatoes" name="topping10" value="Tomatoes">
+                <label for="Tomatoes">Tomatoes</label>
+                <input type="checkbox" id="Olives" name="topping11" value="Olives">
+                <label for="Olives">Olives</label>
+            </div>
+        </section>
+        <!--Section 5: Sides-->
+        <section>
+            <div>
+                <!--Sides and desserts subheading-->
+                <h5>Sides & Desserts</h5>
+                <p>Please select a side:</p>
+                <input type="checkbox" id="None3" name="side1" value="None">
+                <label for="None3">None</label>
+                <input type="checkbox" id="Wings" name="side2" value="Wings">
+                <label for="Wings">Wings</label>
+                <input type="checkbox" id="Salad" name="side3" value="Salad">
+                <label for="Salad">Salad</label>
+                <input type="checkbox" id="Fries" name="side4" value="Fries">
+                <label for="Fries">Fries</label>
+                <input type="checkbox" id="Garlic_Bread" name="side5" value="Garlic Bread">
+                <label for="Garlic_Bread">Garlic Bread</label>
+                <input type="checkbox" id="Breadsticks" name="side6" value="Breadsticks">
+                <label for="Breadsticks">Breadsticks</label>
+                <p>Please select a dessert:</p>
+                <input type="checkbox" id="None4" name="dessert1" value="None">
+                <label for="None4">None</label>
+                <input type="checkbox" id="Brownie" name="dessert2" value="Brownie">
+                <label for="Brownie">Brownie</label>
+                <input type="checkbox" id="Cinnamon_Twists" name="dessert3" value="Cinnamon Twists">
+                <label for="Cinnamon_Twists">Cinnamon Twists</label>
+                <input type="checkbox" id="Cookies" name="dessert4" value="Cookies">
+                <label for="Cookies">Cookies</label>
+            </div>
+        </section>
+        <!--Section 6: Contact information-->
+        <section>
+            <div>
+                <!--Contact subheading-->
+                <h6>Contact</h6>
+                <p>Please fill out the information below to complete your order!</p>
+                <input type="text" name="firstname" required placeholder="Enter your first name">
+                <input type="text" name="lastname" required placeholder="Enter your last name">
+                <p>Please enter your email below:</p>
+                <input type="email" required placeholder="Your e-mail">
+                <p>Please enter your phone number below:</p>
+                <input type="tel" name="phonenum" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Your phone number">
+                <p>Thank you for your time, don't forget to submit your order below!</p>
+                <input type="submit" value="Submit Order">
+            </div>
+        </section>
+    </form>
+    <!--Form end-->
+
+</body>
+
+</html>
